@@ -3,7 +3,7 @@ Interactively setup a raspberry pi's micro SD card
 
 I got tired of having to manually setup wifi and SSH on my raspberry pi whenever the SD card got corrupted when there was a power outage, or when a package got broken and I couldn't completely fix it, so I made this script to setup the microSD card automatically, interactively inputting wifi name and password, and whether to setup SSH
 
-this needs the IMG file to be next to the script
+this needs the IMG file to be next to the script (or at least, in a directory under the same directory where the script is, the script uses `find`)
 
 so
 
