@@ -1,12 +1,37 @@
 # rpi-auto-setup-script
 Interactively setup a raspberry pi's micro SD card
 
+I got tired of having to manually setup wifi and SSH on my raspberry pi whenever the SD card got corrupted when there was a power outage, or when a package got broken and I couldn't completely fix it, so I made this script to setup the microSD card automatically, interactively inputting wifi name and password, and whether to setup SSH
+
+this needs the IMG file to be next to the script
+
+so
+
+```
+tree
+.
+├── 2020-02-13-raspbian-buster-lite.img
+└── setup.sh
+
+0 directories, 2 files
+```
+
 tested with raspbian buster `2020-02-13-raspbian-buster-lite.img`
 
 ```
 sha256sum 2020-02-13-raspbian-buster-lite.img
 4700d93867eed0b047494d381590a1901a32b2c0f8d95d8d45d6e63fb8c46969  2020-02-13-raspbian-buster-lite.img
 ```
+
+```
+$ shellcheck --version
+ShellCheck - shell script analysis tool
+version: 0.7.1
+license: GNU General Public License, version 3
+website: https://www.shellcheck.net
+```
+
+shellcheck doesn't show any problems, though I think it could maybe be improved, this serves my purposes
 
 ## dependencies
 
